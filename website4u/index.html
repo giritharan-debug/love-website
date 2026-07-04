@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Password Screen -->
+    <div id="password-screen">
+
+        <h2>Enter Secret Password ❤️</h2>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password">
+
+        <button onclick="checkPassword()">
+            Enter
+        </button>
+
+    </div>
+
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+
+        <h1>Welcome My Love ❤️</h1>
+
+    </div>
+
+    <!-- Main Website -->
+    <div id="website">
+
+        <!-- Tabs -->
+
+        <div class="tabs">
+
+            <button class="tab active" onclick="openTab('letter')">
+                ❤️ Love Letter
+            </button>
+
+            <button class="tab" onclick="openTab('music')">
+                🎵 Music
+            </button>
+
+            <button class="tab" onclick="openTab('notes')">
+                📝 Notes
+            </button>
+
+            <button class="tab" onclick="openTab('gallery')">
+                🌷 Gallery
+            </button>
+
+        </div>
+
+        <!-- Love Letter -->
+
+        <div id="letter" class="content" style="display:block;">
+
+    <h2>💌 My Dearest Love</h2>
+
+    <div class="letter-card" onclick="toggleLetter()">
+
+        <h3>Click to Open ❤️</h3>
+
+        <div id="letterText">
+
+            <p>
+                My love,
+            </p>
+
+            <p>
+                Every day with you feels like the most beautiful dream.
+                Your smile brightens my boring days and your eyes
+                is my favorite view .
+            </p>
+
+            <p>
+                No matter what happens,
+                I promise to love you forever.
+            </p>
+
+            <p>
+                ❤️ Yours Forever ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <!-- Music -->
+
+        <div id="music" class="content">
+
+<h2>🎵 dedicate Songs</h2>
+
+<div class="song">
+
+🎵 Perfect - Ed Sheeran
+
+</div>
+
+<div class="song">
+
+🎵 Until I Found You
+
+</div>
+
+<div class="song">
+
+🎵 Golden Hour
+
+</div>
+
+</div>
+
+        <!-- Notes -->
+
+        <<div id="notes" class="content">
+
+<h2>📝 Cute Notes</h2>
+
+<div class="note">
+Eat on Time ❤️
+</div>
+
+<div class="note">
+Drink Water 💧
+</div>
+
+<div class="note">
+Sleep Well 😴
+</div>
+
+<div class="note">
+I Love You Forever ❤️
+</div>
+
+</div>
+
+        <!-- Gallery -->
+         <div id="proposal" class="content">
+
+    <h1>💍 Will You Be Mine Forever? 💍</h1>
+
+    <p class="proposal-text">
+        From the moment I met you, my life became brighter.
+        Every smile, every laugh, every moment with you is a treasure.
+        I don't want just today with you—I want every tomorrow too.
+    </p>
+
+    <h2>❤️ Will You Be My Forever? ❤️</h2>
+
+    <div class="proposal-buttons">
+        <button class="yes-btn" onclick="sayYes()">YES ❤️</button>
+
+        <button class="no-btn" id="noBtn" onmouseover="moveNo()">
+            NO 😜
+        </button>
+    </div>
+
+    <h2 id="answer"></h2>
+
+</div>
+
+        <div id="gallery" class="content">
+
+<h2>🌷 Gallery</h2>
+<div id="preview">
+
+<img id="previewImg">
+
+</div>
+
+<div class="gallery">
+
+<img src="images/images/photo1.png" onclick="showImage(this.src)">
+
+<img src="images/images/photo2.png" onclick="showImage(this.src)">
+
+</div>
+
+</div>
+    <div class="heart" style="top:10%;left:10%;">❤️</div>
+<div class="heart" style="top:25%;right:15%;">❤️</div>
+<div class="heart" style="bottom:20%;left:20%;">❤️</div>
+
+<div class="teddy" style="top:40%;left:5%;">🧸</div>
+<div class="teddy" style="bottom:15%;right:10%;">🧸</div>
+
+<script src="script.js"></script>
+<audio id="bgMusic" loop preload="auto">
+    <source src="music/music/bgm.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<button id="musicBtn" onclick="toggleMusic()">
+    🎵 Play Music
+</button>
+<button class="tab" onclick="openTab('proposal')">
+    💍 Proposal
+</button>
+
+</body>
+</html>
